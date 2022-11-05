@@ -1,0 +1,3 @@
+CREATE TABLE wrod (word_id INTEGER PRIMARY KEY word TEXT);
+CREATE TABLE crossword (crossword_id INTEGER KEY AUTOINCREMENT);
+CREATE TABLE word_crossword (id_crossword INTEGER, id_word INTERGER, id INTEGER PRIMARY KEY AUTOINCREMENT, FOREIGN KEY (id_crossword) REFERENCES crossword(crossword_id), FOREIGN KEY (id_word) REFERENCES word(word_id));
